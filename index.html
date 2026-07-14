@@ -98,7 +98,7 @@
   function resetPage() {
     noCount = 0;
     yesBtnSize = 18;
-    question.textContent = "รักเค้าไหม? 💖";
+    question.textContent = "คิดถึงเค้ามั้ย? 💖";
     // แก้ตรงนี้เพื่อเปลี่ยนรูปหน้าแรก
     gif.src = "https://media.tenor.com/76BaX0eo304AAAAj/kitty-kitty-heart.gif";
     initButtons();
@@ -107,7 +107,7 @@
   function yesClick(yesBtn) {
     // แก้ตรงนี้เพื่อเปลี่ยนรูปเมื่อกด yes
     gif.src = "https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif";
-    question.textContent = "เย่ เค้าก็รักเธอเหมือนกัน 💗";
+    question.textContent = "เย่ เค้าก็คิดถึงเธอเหมือกัน 💗";
     btnContainer.innerHTML = `<button class="btn" id="homeBtn">Home 🏠</button>`;
     document.getElementById('homeBtn').addEventListener('click', resetPage);
   }
@@ -124,7 +124,7 @@
       yesBtn.onclick = () => {
         // แก้ตรงนี้เพื่อเปลี่ยนรูปเมื่อกด love
         gif.src = "https://media1.tenor.com/m/qR1sGRNmfqsAAAAC/besito-catlove.gif";
-        question.innerHTML = `<div class="message-box">รักเหมือนกันนนอิอิ 💞</div>`;
+        question.innerHTML = `<div class="message-box">เค้าก้คิดถึงเหมือกัน 💞</div>`;
         btnContainer.innerHTML = `<button class="btn" id="homeBtn">Home 🏠</button>`;
         document.getElementById('homeBtn').addEventListener('click', resetPage);
       };
